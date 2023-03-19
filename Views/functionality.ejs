@@ -1,0 +1,32 @@
+
+<form action="/add" method="post">
+<div class="descriptionDiv">
+ <label class="descriptionLabel" for="description">Description</label>
+<input class="description" type="text" name="description" id="description" placeholder="Add description to your Todo" required>
+   
+</div>
+<hr>
+<div class="categoryDiv">
+<label for="category" class="categoryLabel">category</label>
+<select class="category" name="category" id="category">
+    <option value="" disabled selected>choose a category</option>
+    <option value="personal">Personal  </option>
+    <option value="school">School</option>
+    <option value="work">Work</option>
+    <option value="other">other</option>
+</select>
+</div>
+
+<div class="dateDiv">
+<label class="dateLabel" for="date">Due Date</label>
+<input class="date" type="date" name="date" id="date" required>
+</div>
+<hr>
+
+<div class="buttonDiv">
+   <button class="addTask" type="submit"><i class="fa-solid fa-plus"></i> Add Task</button>
+
+<button type="button" id="deletebtn" class="deleteTask"><i class="fa-solid fa-trash"></i> Delete Task </button> 
+</div>
+
+</form>
