@@ -1,0 +1,38 @@
+<!-- this ejs file is used to render the different Todos -->
+
+<% for(const i of result){%>
+
+    <hr>
+
+    <li class="todoList">
+
+        <div class="showDescription">
+
+            <input type="checkbox" name="checkbox" id="<%=i._id%>" class="checks">
+            
+            <h2>
+              
+                <span><%= i.description %></span> 
+
+            </h2>
+
+        </div>
+        <div class="showCategory">
+
+            <span class="categorybtn" disabled><%=i.category%></span>
+        </div>
+        
+            <div class="showDate">
+
+                <p>
+                    <i class="fa-regular fa-calendar-days calender"></i> <%= i.dueDate.getDate()%>/
+                    <%var month =i.dueDate.getMonth()+1%> <%=month%>/
+                    <%= i.dueDate.getFullYear()%>
+                </p>
+            </div>
+        
+    </li>
+    <% } %>
+
+
+

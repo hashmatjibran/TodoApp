@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Images/favicon.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Todo App</title>
+    </head>
+    <body>
+        <h1 class="appHeading"> <img class="logo" src="../Images/Image.png" alt="">  TODO APP</h1>
+   
+        <!-- the functionality.ejs contains the form and the buttons basically we can say the functionality of the APP -->
+    <%- include('./functionality.ejs'); %>
+
+    <!-- display todos in the file below and adding the file here -->
+     <%- include('./displayTodo.ejs')%>
+   
+
+     <%- include('./footer.ejs')%>
+     <!-- using jquerry for using Ajax  -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+    <!-- Using Font AWesome for Icons -->
+    <script defer src="https://kit.fontawesome.com/7d7d520dab.js" crossorigin="anonymous"></script>
+
+    <!-- using our own js file  -->
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
