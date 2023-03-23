@@ -34,13 +34,12 @@ const displayTodos = function (request , response) {
  {
 
     for (const id of request.body.deleteTodoArray) {
-        console.log(id);
+       
         const query= todoList.findByIdAndDelete(id)
         .then((result) => {
         }).catch((err) => {
         });
     }
-    console.log();
     return response.end(request.headers.referer);
    
  }
