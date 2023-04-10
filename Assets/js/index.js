@@ -24,8 +24,11 @@ function deleteTodo() {
     // Only those items which are checked will be deleted
      let elements = document.getElementsByClassName('checked');
     
+
     //  converting the object collection into an array of values
      const objectToArray = Object.values(elements);
+
+
 
     //  populating the delete Array i.e todo's to be deleted
      for (const [i,element] of objectToArray.entries()) {

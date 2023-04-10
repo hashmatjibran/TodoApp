@@ -40,7 +40,6 @@ const displayTodos = function (request , response) {
         }).catch((err) => {
         });
     }
-    console.log();
     return response.end(request.headers.referer);
    
  }
